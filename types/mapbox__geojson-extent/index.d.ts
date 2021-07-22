@@ -7,7 +7,7 @@ import { GeoJSON, BBox, Polygon } from 'geojson';
 
 export = bbox;
 export as namespace bbox;
-declare function bbox(geoJson: GeoJSON): BBox;
+declare function bbox(geoJson: GeoJSON): BBox | null;
 
 declare namespace bbox {
     function polygon(geoJson: GeoJSON): Polygon | null;
